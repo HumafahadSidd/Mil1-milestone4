@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Online CV Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Editable Online CV Generator</h1>
+    <form id="Resumeform">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name" required name="name"><br><br>
+
+            <label for="email">Current Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required name="email"><br><br>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your Number" required name="phone"><br><br>
+
+            <label for="linkedIn">LinkedIn ID:</label>
+            <input type="text" id="linkedIn" placeholder="Enter your link" required name="link"><br><br>
+
+            <label for="website">Website:</label>
+            <input type="text" id="website" placeholder="Enter your url" required name="URL"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Educational Details</legend>
+            <label for="educ">Educational Information:</label><br>
+            <textarea id="educ" placeholder="Enter your Educational Information" required name="educ" rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="exp">Working Experience:</label><br>
+            <textarea id="exp" name="exp" placeholder="Enter your Professional Information" required rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Workshops/ Conferences/ Training/ Courses</legend>
+            <label for="train">Workshops/ Conferences/ Training/ Courses:</label><br>
+            <textarea id="train" name="train" placeholder="Enter your activities" required rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Certifications</legend>
+            <label for="cert">Certifications:</label><br>
+            <textarea id="cert" name="certifications" placeholder="Enter your Certifications" required rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Honors & Awards</legend>
+            <label for="award">Honors & Awards:</label><br>
+            <textarea id="award" name="awards" placeholder="Enter your Honors & Awards" required rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Memberships</legend>
+            <label for="mem">Memberships:</label><br>
+            <textarea id="mem" name="memberships" placeholder="Enter your Memberships" required rows="6"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skill">Skills:</label><br>
+            <textarea id="skill" name="skills" placeholder="Enter your professional skills" required rows="6"></textarea>
+        </fieldset>
+        <br>
+
+        <input type="submit" id="button" value="Create CV Online">
+    </form>
+    <br>
+
+    <!-- dynamic and editable Resume generated -->
+    <div id="resume-display" contenteditable="true"> 
+        <!-- //it make elemets editable in browser -->
+
+
+
+    </div>
+    
+    <script src="script4.js"></script>
+</body>
+</html>
